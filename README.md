@@ -23,7 +23,7 @@ If the Docker file doesn't work for you for some reason, please try to install t
 	* If the notebook window doesn't open automatically in your browser, please copy the url given and open it in a browser
 * Run the first two cells in the keras_tutorial notebook from this repository to install the libraries needed
 
-FAQ:
+<b>FAQ</b>:
 * I got the error "docker: Error response from daemon: driver failed programming external connectivity on endpoint relaxed_varahamihira: Bind for 0.0.0.0:8888 failed: port is already allocated."
 	* This means the port 8888 is already in use. It often occurs after you kill a notebook server. You can just pick a different port from the first port number in the docker run line, e.g. `docker run -v "$(PWD)/notebook:/notebooks" -p 7777:8888 tutorial:v1`
 
