@@ -47,7 +47,7 @@ If the Docker file doesn't work for you for some reason, please try to install t
 ## FAQ
 
 * I got the error "docker: Error response from daemon: driver failed programming external connectivity on endpoint relaxed_varahamihira: Bind for 0.0.0.0:8888 failed: port is already allocated."
-    * This means the port 8888 is already in use. It often occurs after you kill a notebook server. You can just pick a different port from the first port number in the docker run line, e.g. `docker run -v "$(PWD)/notebook:/notebooks" -p 7777:8888 tutorial:v1`
+    * This means the port 8888 is already in use. It often occurs after you kill a notebook server. You can just pick a different port from the first port number in the docker run line, e.g. `docker run -v "$(pwd)/notebook:/notebooks" -p 7777:8888 tutorial:v1`
 
 * Can I use Python 3.7?
     * As of 2018.12.03, Tensorflow hasn't released the official support for Python 3.7 yet, so we are using Python 3.6 for this tutorial at the moment.
