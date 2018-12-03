@@ -32,4 +32,5 @@ FAQ:
 
 * I got a FileNotFoundError when running cell 10!
 	* We encourage you to find the pictures you like for testing, so you need to put some pictures there or change the image path called in the function.
+
  
