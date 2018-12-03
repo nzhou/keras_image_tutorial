@@ -19,7 +19,7 @@ To start the tutorial, please clone this repository and set up the Docker contai
  1. Install Docker from https://www.docker.com/
  1. Run the Docker image:
     ```
-    docker run -v "$(PWD)/notebook:/notebooks" -p 8888:8888 docker.io/burk/champagne-image-tutorial:latest
+    docker run -v "$(pwd)/notebook:/notebooks" -p 8888:8888 docker.io/burk/champagne-image-tutorial
     ``` 
     * If you are using Docker for Windows, please first configure sharing as
       explained [here](https://blogs.msdn.microsoft.com/stevelasker/2016/06/14/configuring-docker-for-windows-volumes/).
@@ -28,7 +28,7 @@ To start the tutorial, please clone this repository and set up the Docker contai
 
 You can also build the Docker container yourself:
  1. Build the Docker image: `docker build . --tag tutorial:v1`
- 1. Start the container: `docker run -v "$(PWD)/notebook:/notebooks" -p 8888:8888 tutorial:v1`
+ 1. Start the container: `docker run -v "$(pwd)/notebook:/notebooks" -p 8888:8888 tutorial:v1`
 
 If the Docker file doesn't work for you for some reason, please try to install the libraries needed using Anaconda:
  1. Download and install Anaconda (https://www.anaconda.com/download/)
