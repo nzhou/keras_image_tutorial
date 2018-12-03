@@ -16,28 +16,31 @@ packages using Anaconda.
 
 To start the tutorial, please clone this repository and set up the Docker container with the following steps:
 
- 1. Install Docker from https://www.docker.com/
- 1. Run the Docker image:
+1. Install Docker from https://www.docker.com/
+1. Run the Docker image:
+
     ```
     docker run -v "$(pwd)/notebook:/notebooks" -p 8888:8888 docker.io/burk/champagne-image-tutorial
     ``` 
-    * If you are using Docker for Windows, please first configure sharing as
-      explained [here](https://blogs.msdn.microsoft.com/stevelasker/2016/06/14/configuring-docker-for-windows-volumes/).
-    * Start the tutorial container by running `docker run -v "(absolute path of the repository)/notebook:/notebooks" -p 8888:8888 tutorial:v1`
- 1. Copy the url given in the terminal window and open it in a browser
+
+    * If you are using Docker for Windows, please first configure sharing as explained
+      [here](https://blogs.msdn.microsoft.com/stevelasker/2016/06/14/configuring-docker-for-windows-volumes/).
+    * Start the tutorial container by running
+      `docker run -v "(absolute path of the repository)/notebook:/notebooks" -p 8888:8888 docker.io/burk/champagne-image-tutorial`
+1. Copy the url given in the terminal window and open it in a browser
 
 You can also build the Docker container yourself:
- 1. Build the Docker image: `docker build . --tag tutorial:v1`
- 1. Start the container: `docker run -v "$(pwd)/notebook:/notebooks" -p 8888:8888 tutorial:v1`
+1. Build the Docker image: `docker build . --tag tutorial:v1`
+1. Start the container: `docker run -v "$(pwd)/notebook:/notebooks" -p 8888:8888 tutorial:v1`
 
 If the Docker file doesn't work for you for some reason, please try to install the libraries needed using Anaconda:
- 1. Download and install Anaconda (https://www.anaconda.com/download/)
- 1. Create a Python 3.6 environment: `conda create -n py36 python=3.6 anaconda`
- 1. Switch to the new environment: `activate py36` or `source activate py36`
- 1. Clone or download the tutorial material to your local computer
- 1. Open a notebook: `jupyter notebook`
+1. Download and install Anaconda (https://www.anaconda.com/download/)
+1. Create a Python 3.6 environment: `conda create -n py36 python=3.6 anaconda`
+1. Switch to the new environment: `activate py36` or `source activate py36`
+1. Clone or download the tutorial material to your local computer
+1. Open a notebook: `jupyter notebook`
     * If the notebook window doesn't open automatically in your browser, please copy the url given and open it in a browser
- 1. Run the first two cells in the keras_tutorial notebook from this repository to install the libraries needed
+1. Run the first two cells in the keras_tutorial notebook from this repository to install the libraries needed
 
 ## FAQ
 
