@@ -7,7 +7,9 @@ In this tutorial, you will learn
 * Fine tune a transfer learning model
 
 To start the tutorial, please clone this repository and set up the docker container with the following steps:
-* Install Docker from https://www.docker.com/
+* Install Docker from https://www.docker.com/get-started
+	* For linux, try `sudo apt-get install docker.io`
+* Start the Docker service if it didn't start automatically after installation
 * Build the Docker image by running `docker build . --tag tutorial:v1`
 * Start the tutorial container by running `docker run -v "$(PWD)/notebook:/notebooks" -p 8888:8888 tutorial:v1`
 	* If you are using Docker for Windows, please first configure sharing as explained here: https://blogs.msdn.microsoft.com/stevelasker/2016/06/14/configuring-docker-for-windows-volumes/
@@ -33,4 +35,5 @@ If the Docker file doesn't work for you for some reason, please try to install t
 * I got a FileNotFoundError when running cell 10!
 	* We encourage you to find the pictures you like for testing, so you need to put some pictures there or change the image path called in the function.
 
- 
+* Can I use Linux subsystem in Windows?
+	* It's quite tricky to make Docker work for the Linux subsystem in Windows, so we suggest to use a native environment. Or try the Anaconda option instead.
