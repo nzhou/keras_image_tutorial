@@ -24,9 +24,11 @@ To start the tutorial, please clone this repository and set up the Docker contai
     ``` 
 
     * If you are using Docker for Windows, please first configure sharing as explained
-      [here](https://blogs.msdn.microsoft.com/stevelasker/2016/06/14/configuring-docker-for-windows-volumes/).
-    * Start the tutorial container by running
-      `docker run -v "(absolute path of the repository)/notebook:/notebooks" -p 8888:8888 docker.io/burk/champagne-image-tutorial`
+      [here](https://blogs.msdn.microsoft.com/stevelasker/2016/06/14/configuring-docker-for-windows-volumes/). Then start the tutorial container by running
+
+        ```
+        docker run -v "(absolute path of the repository)/notebook:/notebooks" -p 8888:8888 docker.io/burk/champagne-image-tutorial`
+        ```
 1. Copy the url given in the terminal window and open it in a browser
 
 You can also build the Docker container yourself:
