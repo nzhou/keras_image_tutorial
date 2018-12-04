@@ -16,9 +16,8 @@ packages using Anaconda.
 
 To start the tutorial, please clone this repository and set up the Docker container with the following steps:
 
-1. Install Docker from https://www.docker.com/
+1. Install Docker from https://www.docker.com/get-started. For linux, try `sudo apt-get install docker.io`
 1. Run the Docker image:
-
     ```
     docker run -v "$(pwd)/notebook:/notebooks" -p 8888:8888 docker.io/burk/champagne-image-tutorial
     ``` 
@@ -55,4 +54,5 @@ If the Docker file doesn't work for you for some reason, please try to install t
 * I got a FileNotFoundError when running cell 10!
     * We encourage you to find the pictures you like for testing, so you need to put some pictures there or change the image path called in the function.
 
- 
+* Can I use Linux subsystem in Windows?
+	* It's quite tricky to make Docker work for the Linux subsystem in Windows, so we suggest to use a native environment. Or try the Anaconda option instead.
