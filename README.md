@@ -34,6 +34,8 @@ You can also build the Docker container yourself:
 1. Build the Docker image: `docker build . --tag tutorial:v1`
 1. Start the container: `docker run -v "$(pwd)/notebook:/notebooks" -p 8888:8888 tutorial:v1`
 
+### Anaconda
+
 If the Docker file doesn't work for you for some reason, please try to install the libraries needed using Anaconda:
 1. Download and install Anaconda (https://www.anaconda.com/download/)
 1. Create a Python 3.6 environment: `conda create -n py36 python=3.6 anaconda`
